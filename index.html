@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="indexcss.css" />
+    <meta name="copyright" content="@itzSaeed &#40;on github&#41;" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!--Main text before the form-->
+
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve &#60;3
+      </p>
+
+      <!--The form-->
+
+      <form id="survey-form" action="index.html" method="post">
+        <label id="name-label" for="name">Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Please enter your real name"
+          required
+        />
+
+        <label id="email-label" for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Please enter a valid email"
+          required
+        />
+
+        <label id="number-label" for="age"
+          >Age<span class="optnal">&#40;optional&#41;</span></label
+        >
+        <input
+          id="number"
+          name="age"
+          type="number"
+          min="3"
+          max="125"
+          placeholder="Please enter your actual age"
+        />
+
+        <label for="role">What is your current role</label>
+        <select id="dropdown" name="role" required>
+          <option value="" selected disabled hidden>Choose your role</option>
+          <option>Student</option>
+          <option>Part time job</option>
+          <option>Full time job</option>
+          <option>Other</option>
+        </select>
+
+        <label class="surf-daily?">Do you surf the internet daily?</label>
+        <label class="radio-buttons">
+          <input
+            name="internet-daily-use"
+            value="Yes, everyday"
+            type="radio"
+            class="internet-surf"
+          />
+          Yes, I surf it daily
+        </label>
+        <label class="radio-buttons">
+          <input
+            name="internet-daily-use"
+            value="Yes, everyday"
+            type="radio"
+            class="internet-surf"
+          />
+          No, just most of the week
+        </label>
+        <label class="radio-buttons">
+          <input
+            name="internet-daily-use"
+            value="Yes, everyday"
+            type="radio"
+            class="internet-surf"
+          />
+          No, just sometimes
+        </label>
+        <label class="radio-buttons">
+          <input
+            name="internet-daily-use"
+            value="Yes, everyday"
+            type="radio"
+            class="internet-surf"
+          />
+          No, I barely use it
+        </label>
+
+        <label class="using-apps"
+          >Which apps do you use
+          <span class="optnal">&#40;select all that apply&#41;</span></label
+        >
+        <label>
+          <input value="youtube" type="checkbox" />
+          YouTube
+        </label>
+        <label>
+          <input value="twitter" type="checkbox" />
+          Twitter
+        </label>
+        <label>
+          <input value="facebook" type="checkbox" />
+          Facebook
+        </label>
+        <label>
+          <input value="instagram" type="checkbox" />
+          Instagram
+        </label>
+        <label>
+          <input value="tiktok" type="checkbox" />
+          TikTok
+        </label>
+        <label>
+          <input value="snapchat" type="checkbox" />
+          Snapchat
+        </label>
+
+        <label class="thoughts-label"
+          >What's your thoughts about the internet</label
+        >
+        <textarea></textarea>
+
+        <submit><button id="submit">Submit</button></submit>
+      </form>
+    </main>
+  </body>
+</html>
