@@ -1,6 +1,6 @@
 # survey page website
 
----notes---  
+---notes--- 
 
 -somethings might seem weird because this was made for the freecodecamp project
 -you will need to download the file to be able to see the background photo  
